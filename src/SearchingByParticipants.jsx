@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import axios from "axios";
 import Activity from "./Activity";
 
-function TypeRandom() {
+function SearchingByParticipants() {
   const [data, setData] = useState([]);
   const [value, setValue] = useState(0);
 
-  const select = ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"];
+  const select = [2, 3];
   const options = select.map((text, index) => {
 		return <option key={index} value={index}>{text}</option>;
 	});
 
-  function findByType() {
+  function findByParticipants() {
     const fetchData = async () => {
       const result = await axios(
-        `http://www.boredapi.com/api/activity?participants=1&type=${select[value]}`,
+        `http://www.boredapi.com/api/activity?participants=${select[value]}`,
       );
 
       setData(result.data);
@@ -25,14 +25,14 @@ function TypeRandom() {
   
   return (
     <div>
-      Найди занятие по виду: 
+      Найди занятие для компании
       <select value={value} onChange={event => setValue(event.target.value)}>
         {options}
       </select>
-      <button onClick={findByType}>Найти</button>
+      <button onClick={findByParticipants}>Найти</button>
       <Activity data={data}/>
     </div>
   )
 }
 
-export default TypeRandom;
+export default SearchingByParticipants;

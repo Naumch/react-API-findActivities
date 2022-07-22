@@ -1,14 +1,14 @@
 import Random from "./Random";
-import TypeRandom from "./TypeRandom";
-import ParticipantRandom from "./ParticipantRandom.jsx";
+import SearchingByType from "./SearchingByType";
+import SearchingByParticipants from "./SearchingByParticipants";
 
 function App() {
 
   return (
     <>
       <Random />
-      <TypeRandom />
-      <ParticipantRandom />
+      <SearchingByType />
+      <SearchingByParticipants />
     </>
   );
 }
