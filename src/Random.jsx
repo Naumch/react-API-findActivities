@@ -1,5 +1,6 @@
 import React, { useState ,useEffect } from "react";
 import axios from "axios";
+import Activity from "./Activity";
 
 function Random() {
   const [data, setData] = useState([]);
@@ -10,23 +11,14 @@ function Random() {
         'http://www.boredapi.com/api/activity?participants=1',
       );
 
-      setData([result.data]);
+      setData(result.data);
     };
 
     fetchData();
   }, []);
 
-  const result = data.map(res => {
-    return (
-      <div key={res.key}>
-        <p>Новое задание: {res.activity}</p>
-        <a href={res.link}>{res.link}</a>
-      </div>
-    )
-  })
-
   return (
-    result
+    <Activity data={data}/>
   )
 }
 
