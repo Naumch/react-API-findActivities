@@ -25,11 +25,13 @@ function SearchingByType() {
   
   return (
     <div>
-      Найди занятие по виду: 
-      <select value={value} onChange={event => setValue(event.target.value)}>
-        {options}
-      </select>
-      <button onClick={findByType}>Найти</button>
+      <p>
+        <span>Find an activity by type</span>
+        <select value={value} onChange={event => setValue(event.target.value)}>
+          {options}
+        </select>
+        <button onClick={findByType}>Find</button>
+      </p>
       <Activity data={data}/>
     </div>
   )

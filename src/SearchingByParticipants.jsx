@@ -4,7 +4,6 @@ import Activity from "./Activity";
 
 function SearchingByParticipants() {
   const [data, setData] = useState([]);
-  //const [filter, setFilter] = useState(null);
 
   function findByParticipants() {
     const fetchData = async () => {
@@ -26,8 +25,10 @@ function SearchingByParticipants() {
   
   return (
     <div>
-      Найди занятие для компании
-      <button onClick={findByParticipants}>Найти</button>
+      <p>
+        <span>Find an activity for the company</span>
+        <button onClick={findByParticipants}>Find</button>
+      </p>
       <Activity data={data}/>
     </div>
   )
