@@ -20,7 +20,7 @@ function Random() {
     return (
       <div key={res.key}>
         <p>Новое задание: {res.activity}</p>
-        <p>{res.link}</p>
+        <a href={res.link}>{res.link}</a>
       </div>
     )
   })

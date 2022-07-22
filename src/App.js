@@ -1,9 +1,13 @@
 import Random from "./Random";
+import TypeRandom from "./TypeRandom";
 
 function App() {
 
   return (
-    <Random />
+    <>
+      <Random />
+      <TypeRandom />
+    </>
   );
 }
 
