@@ -1,5 +1,6 @@
 import Random from "./Random";
 import TypeRandom from "./TypeRandom";
+import ParticipantRandom from "./ParticipantRandom.jsx";
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Random />
       <TypeRandom />
+      <ParticipantRandom />
     </>
   );
 }
