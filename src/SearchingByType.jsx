@@ -26,11 +26,11 @@ function SearchingByType() {
   return (
     <div>
       <p>
-        <span>Find an activity by type</span>
+        <span>Find an activity by type</span><br />
         <select value={value} onChange={event => setValue(event.target.value)}>
           {options}
         </select>
-        <button onClick={findByType}>Find</button>
+        <button onClick={findByType}>Search</button>
       </p>
       <Activity data={data}/>
     </div>

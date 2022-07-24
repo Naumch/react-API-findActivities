@@ -5,11 +5,13 @@ import SearchingByParticipants from "./SearchingByParticipants";
 function App() {
 
   return (
-    <>
+    <div className="container">
       <Random />
+      <hr/>
       <SearchingByType />
+      <hr />
       <SearchingByParticipants />
-    </>
+    </div>
   );
 }
 

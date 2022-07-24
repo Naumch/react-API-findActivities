@@ -27,7 +27,7 @@ function SearchingByParticipants() {
     <div>
       <p>
         <span>Find an activity for the company</span>
-        <button onClick={findByParticipants}>Find</button>
+        <button onClick={findByParticipants}>Search</button>
       </p>
       <Activity data={data}/>
     </div>
