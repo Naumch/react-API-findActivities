@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-API-findActivities/static/css/main.4e5674c2.css",
+    "main.js": "/react-API-findActivities/static/js/main.53ab8e85.js",
+    "static/media/background.jpg": "/react-API-findActivities/static/media/background.2cdb39bb6d6d42cb88ce.jpg",
+    "index.html": "/react-API-findActivities/index.html",
+    "main.4e5674c2.css.map": "/react-API-findActivities/static/css/main.4e5674c2.css.map",
+    "main.53ab8e85.js.map": "/react-API-findActivities/static/js/main.53ab8e85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e5674c2.css",
+    "static/js/main.53ab8e85.js"
+  ]
+}
